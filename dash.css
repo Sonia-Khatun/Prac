@@ -10,10 +10,6 @@
     background-color: gray;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
 .header{
     height: 10%;
     width: 100%;
@@ -100,12 +96,16 @@ img {
     align-items: center;
     gap: 20px;
 }
+select{
+    padding-right: 30px;
+}
 input, select {
   background-color: rgba(1, 1, 41, 0.911);
   color: white;
   width: 100%;
   padding: 12px;
   margin: 8px 8px;
+  margin-right: 20px;
   display: inline-block;
   border: none;
   border-radius: 5px;
@@ -114,9 +114,24 @@ input, select {
  
   box-sizing: border-box;  */
 }
+.custom-select {
+  appearance: none; /* Remove default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"><path fill="white" d="M6 8L0 0h12z"/></svg>') no-repeat;
+  background-position: right 10px center; /* Position arrow */
+  padding-right: 35px; /* space for arrow */
+  height: 40px;
+  width: 200px;
+  font-size: 16px;
+  color: rgb(190, 172, 172);
+}
+#dashboard{
+    padding-right: 20px;
+}
 .crud{
     display: flex;
-    margin-top: 120px;
+    margin-top: 16px;
     color: white;
     justify-content:space-between;
     align-items: center;
@@ -130,9 +145,11 @@ input, select {
 }
 .crudimg1{
     margin-left: 8px;
+    
 }
 .crudimg2{
     margin-right: 8px;
+    margin-right: 28px;
 }
 .ecom{
     margin-top: 30px;
@@ -145,6 +162,9 @@ input, select {
     align-items: center;
     gap: 36px;
 }
+.sub-ecom2{
+    margin-right: 28px;
+}
 .egret{
     margin-top: 30px;
     display: flex;
@@ -155,6 +175,9 @@ input, select {
     display: flex;
     align-items: center;
     gap: 36px;
+}
+.sub-egret2{
+    margin-right: 28px;
 }
 .invoice{
     margin-top: 30px;
@@ -390,10 +413,95 @@ input, select {
     display: flex;
     gap: 15px;
 }
+.big-small1{
+   font-size: xx-large;
+   font-weight: 900;
+   color: white;
+}
+.big-small2{
+  color: white;
+  margin-top: 10px;
+}
+.txt-achieve{
+    margin-top: 30px;
+}
+.txt-remain{
+    margin-top: 25px;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .header {
-    flex-direction: column; 
+    height: 10%;
+    width: 100%;
   }
+  .mid-nav{
+    height: 8%;
+    width: 100%; /* */
+}
+.left-content{
+    width: 70%;
+    height: 100%;
+}
+.dash-img{
+    margin-top: 200px;
+    
+}
+.subleft-content{
+   padding: 40px;
+   height: 40%;
+}
+.footer-content{
+    height: 60%;
+    padding-top: 80px;
+} 
+.right-footer{
+    padding: 45px;
+}
+.left-footer{
+    padding: 40px;
+}
+.text-img{
+    padding: 5%;
+    flex-direction: column;
+    
+}
+.big-small1{
+    font-size: 2.5rem;
+}
+.big-small2{
+    padding: 25px;
+    font-size: 1.1rem;
+}
+.right-content{
+    width: 45%;
+}
+.right-body{
+    width: 100%;
+}
+.right-body {
+        width: 100%;
+        padding: 15px;
+    }
+.txt-achieve {
+        margin-top: 153px;
+    }
+.txt-remain {
+        margin-top: 57px;
+    }
+.sub-crud {
+    gap: 20px;
+}
+.sub-ecom {
+    gap: 20px;
+}
+.sub-egret {
+    gap: 20px;
+}
+.invoice {
+    gap: 20px;
+}
+.dash-img {
+    gap: 8px;
+}
 
 }

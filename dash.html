@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <link rel="stylesheet" href="dash.css" />
+    
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
     rel="stylesheet"
+
 />
   </head>
   <body>
@@ -28,7 +30,7 @@
       </div>  
 
       <div class="mid-section">
-        <div class="left-side">
+         <div class="left-side">
           <div class="sub-left">
             <div class="sub-left1">
               <div><img src="./Images/logo.png" alt="" width="25px" /></div>
@@ -49,7 +51,7 @@
 
           <div class="dash-img">
             <img src="./Images/dashboard.png" alt="" width="30px" height="30px">
-          <select id="dashboard" name="dashboard">
+          <select class="custom-select" name="dashboard">
             
             <option value="dashboard">Dashboard</option>
             <option value="learning management">Learning Management</option>
@@ -71,7 +73,7 @@
           <div style="color: white;">Ecommerce</div>
           </div>
           
-          <div><img src="./Images/icon.png" alt="" height="30px" width="30px" style="margin-right: 8px;"></div>
+          <div class="sub-ecom2"><img src="./Images/icon.png" alt="" height="30px" width="30px"></div>
         </div>
         <div class="egret">
           <div class="sub-egret">
@@ -79,13 +81,13 @@
           <div style="color: white;">Egret List</div>
           </div>
           
-          <div><img src="./Images/icon.png" alt="" width="30px" height="30px" width="30px" style="margin-right: 8px;"></div>
+          <div class="sub-egret2"><img src="./Images/icon.png" alt="" width="30px" height="30px" width="30px"></div>
         </div>
         <div class="invoice">
           <div><img src="./Images/invoice.png" alt="" width="30px" height="30px" style="margin-left: 8px;"></div>
           <div style="color: white;">Invoice</div>
         </div>
-          </div>
+          </div> 
 
           <div class="right-side">
             <div class="right-mid">
@@ -114,8 +116,8 @@
                   <div class="subleft-content">
                     <div class="text-img">
                     <div class="big-small">
-                      <div style="font-size: xx-large; font-weight: 900; color: white;">Welcome back! Watson</div>
-                      <div style="color: white; margin-top: 10px;">You have completed 40% of your goal this week <br>Start a new goal and improve your result</div>
+                      <div class="big-small1">Welcome back! Watson</div>
+                      <div class="big-small2">You have completed 40% of your goal this week <br>Start a new goal and improve your result</div>
                     </div>
                     
                     <div><img src="./Images/watson.png" alt="" width="140px" height="140px"></div>
@@ -279,13 +281,13 @@
                       <div style="color: rgb(34, 32, 32);">Upgrade to <span style="font-weight: 900;">PRO</span> for <br> more resources</div>
                       <button class="btn2">UPGRADE NOW</button>
                     </div>
-                    <div style="margin-top: 30px;">Achievements</div>
+                    <div class="txt-achieve">Achievements</div>
                     <div class="achieve">
                       <div><img src="./Images/trophy.png" alt="" width="25px" height="25px"></div>
                       <div><img src="./Images/medal.png" alt="" width="25px" height="25px"></div>
                       <div><img src="./Images/high-quality.png" alt="" height="25px" width="25px"></div>
                     </div>
-                    <div style="margin-top: 25px;">Remainder</div>
+                    <div class="txt-remain">Remainder</div>
                     <div>
                       <div class="media-content" style="margin-top: 25px;">
                         <div class="sub-media">
@@ -323,5 +325,6 @@
 
         
       </div>
+      <script src="script.js"></script>
   </body>
 </html>
