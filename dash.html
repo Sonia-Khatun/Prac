@@ -30,7 +30,7 @@
       </div>  
 
       <div class="mid-section">
-         <div class="left-side">
+         <div class="left-side" hidden>
           <div class="sub-left">
             <div class="sub-left1">
               <div><img src="./Images/logo.png" alt="" width="25px" /></div>
@@ -95,7 +95,10 @@
                 <nav>
                   <div class="nav-icon">
                     <div class="left-icon">
-                     <i class="ri-align-justify"></i>
+                     <button id="toggleBtn" onclick="document.querySelector('.left-side').hidden ^= 1">
+                      <i id="hamburgerIcon" class="ri-align-justify"></i>
+                      <i id="closeIcon" class="ri-close-large-line"></i>
+                     </button>
                      <i class="ri-mail-line"></i>
                      <i class="ri-calendar-line"></i>
                      <i class="ri-star-line"></i>
@@ -325,6 +328,6 @@
 
         
       </div>
-      <script src="script.js"></script>
+     <script src="script.js"></script>
   </body>
 </html>
