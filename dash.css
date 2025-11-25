@@ -1,3 +1,39 @@
+/* Normal — Light Mode */
+body {
+  transition: filter 0.4s ease;
+}
+
+/* Dark Mode */
+body.dark {
+  filter: invert(1) hue-rotate(180deg);
+}
+body.dark .keep-gray {
+  filter: invert(1) hue-rotate(180deg); /* double invert → stays original */
+}
+body.dark .keep-black {
+  filter: invert(1) hue-rotate(180deg); /* double invert → stays original */
+}
+
+/* body.dark img {
+  filter: invert(1) hue-rotate(180deg);
+} */
+
+body.dark .keep-img {
+  filter: invert(1) hue-rotate(180deg);
+}
+/* Start in Light Mode: hide moon icon */
+#moon {
+  display: none;
+}
+
+/* When Dark Mode is active: show moon, hide sun */
+body.dark #sun{
+  display: none;
+}
+
+body.dark #moon {
+  display: inline-block;
+}
 * {
     margin: 0;
     padding: 0;
@@ -436,11 +472,43 @@ input, select {
     display: none;
 }
 
+
 @media (max-width: 1024px) {
   .header {
     height: 10%;
     width: 100%;
   }
+  /* Show hamburger button */
+  #hamburgerBtn {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 99999;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+  }
+
+  /* Hide sidebar by default */
+  .left-side {
+    position: fixed;
+    /* top: 0; */
+    left: -260px;  /* move sidebar outside screen */
+    width: 250px;
+    height: 100vh;
+    /* background: #111; */
+    z-index: 99998; /* appears ABOVE page content */
+    transition: left 0.4s ease;
+  }
+
+  /* When active, show sidebar */
+  .left-side.active {
+    left: 0;
+  }
+  .left-icon{
+    margin-left: 250px;
+  }
+
   .mid-nav{
     height: 8%;
     width: 100%; /* */
@@ -449,6 +517,7 @@ input, select {
     width: 70%;
     height: 100%;
 }
+
 .dash-img{
     margin-top: 200px;
     
