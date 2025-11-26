@@ -1,20 +1,3 @@
-const leftSide = document.querySelector(".left-side");
-const toggleBtn = document.getElementById("toggleBtn");
-
-const hamburgerIcon = document.getElementById("hamburgerIcon");
-const closeIcon = document.getElementById("closeIcon");
-
-toggleBtn.addEventListener("click", () => {
-  leftSide.classList.toggle("active");
-
-  const isOpen = leftSide.classList.contains("active");
-
-  hamburgerIcon.style.display = isOpen ? "none" : "inline-block";
-  closeIcon.style.display  = isOpen ? "inline-block" : "none";
-});
-
-
-
 document.getElementById("dark-btn").addEventListener("click", () => {
   document.body.classList.toggle("dark");
 });
@@ -32,6 +15,34 @@ darkTheme.addEventListener("click", () => {
 })
 
 
+
+
+
+
 document.getElementById("hamburgerBtn").addEventListener("click", () => {
   document.querySelector(".left-side").classList.toggle("active");
+});
+
+const closeSidebar = document.getElementById("closeSidebarBtn");
+
+
+closeSidebar.addEventListener("click", () => {
+  sidebar.classList.remove("active");
+});
+
+const sidebar = document.querySelector(".left-side");
+const hamburgerBtn = document.getElementById("hamburgerBtn");
+const closeSidebarBtn = document.getElementById("closeSidebarBtn");
+
+
+// OPEN SIDEBAR
+hamburgerBtn.addEventListener("click", () => {
+  sidebar.hidden = false;
+  hamburgerBtn.style.display = "none";   // hide nav close icon
+});
+
+// CLOSE SIDEBAR (inside sidebar)
+closeSidebarBtn.addEventListener("click", () => {
+  sidebar.hidden = true;
+  hamburgerBtn.style.display = "block"; // show nav hamburger again
 });

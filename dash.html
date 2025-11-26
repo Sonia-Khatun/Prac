@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <link rel="stylesheet" href="dash.css" />
-    
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
-    rel="stylesheet"
 
-/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <div class="header keep-gray">
         <div class="sub-header">
           <div class="sub-header1">
-            <div><img src="./Images/envato-1.svg" alt="" width="20px" /></div> 
+            <div><img src="./Images/envato-1.svg" alt="" width="20px" /></div>
             <div class="txt">
               envato<span style="color: rgb(9, 70, 9); font-weight: 100"
                 >market</span
@@ -27,311 +26,721 @@
 
           <button class="btn1">Buy now</button>
         </div>
-      </div>  
+      </div>
 
       <div class="mid-section">
-         <div class="left-side keep-black" hidden>
+        <div class="left-side keep-black" hidden>
           <div class="sub-left">
             <div class="sub-left1">
               <div><img src="./Images/logo.png" alt="" width="25px" /></div>
               <div class="txt1">Egret</div>
             </div>
-
-            <div>
-              <button id="dark-btn">
-              <i id="moon" class="ri-moon-clear-fill"></i>
-              <i id="sun" class="ri-sun-fill"></i>
-            </button></div>
+            <button id="closeSidebarBtn">
+              <i class="ri-close-large-line"></i>
+            </button>
           </div>
           <div class="prof-name">
-            <img src="./Images/profile.jpg" alt="" width="100px" height="100px" />
+            <img
+              src="./Images/profile.jpg"
+              alt=""
+              width="100px"
+              height="100px"
+            />
           </div>
           <div class="txt2">Watson Joyce</div>
           <div class="icon">
             <img src="./Images/settingg.png" alt="" width="15px" />
             <img src="./Images/people.png" alt="" width="15px" />
             <img src="./Images/paperr.png" alt="" width="15px" />
-          </div> 
+          </div>
 
           <div class="dash-img">
-            <img src="./Images/dashboard.png" alt="" width="30px" height="30px">
-          <select class="custom-select" name="dashboard">
-            
-            <option value="dashboard">Dashboard</option>
-            <option value="learning management">Learning Management</option>
-            <option value="analytics">Analytics</option>
-           <option  value="sales">Sales</option>
-         </select>
-        </div>
-
-        <div class="crud">
-          <div class="sub-crud">
-        <div class="crudimg1"><img src="./Images/crud1.png" alt="" width="30px" height="30px"></div>
-        <div style="font-size: 17px;">Crud Table</div>
-        </div>
-        <div class="crudimg2"><img src="./Images/three-dot.png" alt="" height="30px" width="30px"></div>
-        </div>
-        <div class="ecom">
-          <div class="sub-ecom">
-           <div><img src="./Images/ecommerse.png" alt="" height="30px" width="30px" style="margin-left: 8px;"></div>
-          <div style="color: white;">Ecommerce</div>
+            <img
+              src="./Images/dashboard.png"
+              alt=""
+              width="30px"
+              height="30px"
+            />
+            <select class="custom-select" name="dashboard">
+              <option value="dashboard">Dashboard</option>
+              <option value="learning management">Learning Management</option>
+              <option value="analytics">Analytics</option>
+              <option value="sales">Sales</option>
+            </select>
           </div>
-          
-          <div class="sub-ecom2"><img src="./Images/icon.png" alt="" height="30px" width="30px"></div>
-        </div>
-        <div class="egret">
-          <div class="sub-egret">
-           <div><img src="./Images/bird.png" alt="" height="30px" width="30px" style="margin-left: 8px;"></div>
-          <div style="color: white;">Egret List</div>
-          </div>
-          
-          <div class="sub-egret2"><img src="./Images/icon.png" alt="" width="30px" height="30px" width="30px"></div>
-        </div>
-        <div class="invoice">
-          <div><img src="./Images/invoice.png" alt="" width="30px" height="30px" style="margin-left: 8px;"></div>
-          <div style="color: white;">Invoice</div>
-        </div>
-          </div> 
 
-          <div class="right-side">
-            <div class="right-mid">
-              <div class="mid-nav">
-                <nav>
-                  <div class="nav-icon">
-                    <div class="left-icon">
-                     <button id="toggleBtn" onclick="document.querySelector('.left-side').hidden ^= 1">
-                      <i id="hamburgerIcon" class="ri-align-justify"></i>
-                      <i id="closeIcon" class="ri-close-large-line"></i>
-                     </button>
-                     <i class="ri-mail-line"></i>
-                     <i class="ri-calendar-line"></i>
-                     <i class="ri-star-line"></i>
-                    </div>
-                   <div class="right-icon">
-                    <i class="ri-search-line"></i>
-                    <i class="ri-notification-3-fill"><sup style="width: 10px; height: 10px; background-color: gold; font-size: small;">4</sup></i>
-                    <i class="ri-shopping-cart-fill"><sup style="width: 10px; height: 10px; background-color: gold; font-size: small;">2</sup></i>
-                    <img class="keep-img" src="./Images/profile.jpg" alt="" width="20px" height="20px" style="border-radius: 50%;">
-                   </div>
-                  
-                   
-                  </div>
-                </nav>
+          <div class="crud">
+            <div class="sub-crud">
+              <div class="crudimg1">
+                <img
+                  src="./Images/crud1.png"
+                  alt=""
+                  width="30px"
+                  height="30px"
+                />
               </div>
-              <div class="mid-content">
-                <div class="left-content">
-                  <div class="subleft-content">
-                    <div class="text-img">
+              <div style="font-size: 17px">Crud Table</div>
+            </div>
+            <div class="crudimg2">
+              <img
+                src="./Images/three-dot.png"
+                alt=""
+                height="30px"
+                width="30px"
+              />
+            </div>
+          </div>
+          <div class="ecom">
+            <div class="sub-ecom">
+              <div>
+                <img
+                  src="./Images/ecommerse.png"
+                  alt=""
+                  height="30px"
+                  width="30px"
+                  style="margin-left: 8px"
+                />
+              </div>
+              <div style="color: white">Ecommerce</div>
+            </div>
+
+            <div class="sub-ecom2">
+              <img src="./Images/icon.png" alt="" height="30px" width="30px" />
+            </div>
+          </div>
+          <div class="egret">
+            <div class="sub-egret">
+              <div>
+                <img
+                  src="./Images/bird.png"
+                  alt=""
+                  height="30px"
+                  width="30px"
+                  style="margin-left: 8px"
+                />
+              </div>
+              <div style="color: white">Egret List</div>
+            </div>
+
+            <div class="sub-egret2">
+              <img
+                src="./Images/icon.png"
+                alt=""
+                width="30px"
+                height="30px"
+                width="30px"
+              />
+            </div>
+          </div>
+          <div class="invoice">
+            <div>
+              <img
+                src="./Images/invoice.png"
+                alt=""
+                width="30px"
+                height="30px"
+                style="margin-left: 8px"
+              />
+            </div>
+            <div style="color: white">Invoice</div>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <div class="right-mid">
+            <div class="mid-nav">
+              <nav>
+                <div class="nav-icon">
+                  <div class="left-icon">
+                    <button id="hamburgerBtn">
+                      <i class="ri-align-justify"></i>
+                    </button>
+                    <i class="ri-mail-line"></i>
+                    <i class="ri-calendar-line"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div class="right-icon">
+                    <div>
+                      <button
+                        id="dark-btn"
+                        style="border: none; height: 30px; width: 30px"
+                      >
+                        <i id="moon" class="ri-moon-clear-fill"></i>
+                        <i id="sun" class="ri-sun-fill"></i>
+                      </button>
+                    </div>
+                    <i class="ri-search-line"></i>
+                    <i class="ri-notification-3-fill"
+                      ><sup
+                        style="
+                          width: 10px;
+                          height: 10px;
+                          background-color: gold;
+                          font-size: small;
+                        "
+                        >4</sup
+                      ></i
+                    >
+                    <i class="ri-shopping-cart-fill"
+                      ><sup
+                        style="
+                          width: 10px;
+                          height: 10px;
+                          background-color: gold;
+                          font-size: small;
+                        "
+                        >2</sup
+                      ></i
+                    >
+                    <img
+                      class="keep-img"
+                      src="./Images/profile.jpg"
+                      alt=""
+                      width="20px"
+                      height="20px"
+                      style="border-radius: 50%"
+                    />
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div class="mid-content">
+              <div class="left-content">
+                <div class="subleft-content">
+                  <div class="text-img">
                     <div class="big-small">
                       <div class="big-small1">Welcome back! Watson</div>
-                      <div class="big-small2">You have completed 40% of your goal this week <br>Start a new goal and improve your result</div>
+                      <div class="big-small2">
+                        You have completed 40% of your goal this week
+                        <br />Start a new goal and improve your result
+                      </div>
                     </div>
-                    
-                    <div><img class="keep-img" src="./Images/watson.png" alt="" width="140px" height="140px"></div>
+
+                    <div>
+                      <img
+                        class="keep-img"
+                        src="./Images/watson.png"
+                        alt=""
+                        width="140px"
+                        height="140px"
+                      />
                     </div>
                   </div>
-                 <div class="footer-content">
+                </div>
+                <div class="footer-content">
                   <div class="left-footer">
-                    <div style="font-size: large; font-weight: 600; color: rgba(8, 8, 8, 0.815); margin-bottom: 15px;">Results</div>
-                    
-                    
-                    <div class="ball-txt">
-                      <div class="ball1-text">
-                        <div><img class="keep-img" src="./Images/Blue.png" alt="" width="15x" height="15px"></div>
-                      <div>
-                        <div>React</div>
-                    <div><p style="font-size: smaller; color: rgb(14, 13, 13);">20 March</p></div>
-                      </div>
-                      </div>
-                      
-                    
-                    <div class="bar">
-                      <div class="fill1"></div>
-                    </div>
+                    <div
+                      style="
+                        font-size: large;
+                        font-weight: 600;
+                        color: rgba(8, 8, 8, 0.815);
+                        margin-bottom: 15px;
+                      "
+                    >
+                      Results
                     </div>
 
                     <div class="ball-txt">
                       <div class="ball1-text">
-                        <div><img class="keep-img" src="./Images/yellow.png" alt="" width="15x" height="15px"></div>
-                      <div>
-                        <div>Angular</div>
-                    <div><p style="font-size: smaller; color: rgb(14, 13, 13);">10 March</p></div>
+                        <div>
+                          <img
+                            class="keep-img"
+                            src="./Images/Blue.png"
+                            alt=""
+                            width="15x"
+                            height="15px"
+                          />
+                        </div>
+                        <div>
+                          <div>React</div>
+                          <div>
+                            <p
+                              style="font-size: smaller; color: rgb(14, 13, 13)"
+                            >
+                              20 March
+                            </p>
+                          </div>
+                        </div>
                       </div>
+
+                      <div class="bar">
+                        <div class="fill1"></div>
                       </div>
-                      
-                    
-                    <div class="bar">
-                      <div class="fill"></div>
-                    </div>
                     </div>
 
                     <div class="ball-txt">
                       <div class="ball1-text">
-                        <div><img class="keep-img" src="./Images/Blue.png" alt="" width="15x" height="15px"></div>
-                      <div>
-                        <div>JavaScript</div>
-                    <div><p style="font-size: smaller; color: rgb(14, 13, 13);">15 March</p></div>
+                        <div>
+                          <img
+                            class="keep-img"
+                            src="./Images/yellow.png"
+                            alt=""
+                            width="15x"
+                            height="15px"
+                          />
+                        </div>
+                        <div>
+                          <div>Angular</div>
+                          <div>
+                            <p
+                              style="font-size: smaller; color: rgb(14, 13, 13)"
+                            >
+                              10 March
+                            </p>
+                          </div>
+                        </div>
                       </div>
+
+                      <div class="bar">
+                        <div class="fill"></div>
                       </div>
-                      
-                    
-                    <div class="bar">
-                      <div class="fill1"></div>
-                    </div>
                     </div>
 
                     <div class="ball-txt">
                       <div class="ball1-text">
-                        <div><img class="keep-img" src="./Images/yellow.png" alt="" width="15x" height="15px"></div>
-                      <div>
-                        <div>Html</div>
-                    <div><p style="font-size: smaller; color: rgb(14, 13, 13);">25 March</p></div>
+                        <div>
+                          <img
+                            class="keep-img"
+                            src="./Images/Blue.png"
+                            alt=""
+                            width="15x"
+                            height="15px"
+                          />
+                        </div>
+                        <div>
+                          <div>JavaScript</div>
+                          <div>
+                            <p
+                              style="font-size: smaller; color: rgb(14, 13, 13)"
+                            >
+                              15 March
+                            </p>
+                          </div>
+                        </div>
                       </div>
+
+                      <div class="bar">
+                        <div class="fill1"></div>
                       </div>
-                      
-                    
-                    <div class="bar">
-                      <div class="fill"></div>
-                    </div>
                     </div>
 
                     <div class="ball-txt">
                       <div class="ball1-text">
-                        <div><img class="keep-img" src="./Images/Blue.png" alt="" width="15x" height="15px"></div>
-                      <div>
-                        <div>Css</div>
-                    <div><p style="font-size: smaller; color: rgb(14, 13, 13);">12 March</p></div>
+                        <div>
+                          <img
+                            class="keep-img"
+                            src="./Images/yellow.png"
+                            alt=""
+                            width="15x"
+                            height="15px"
+                          />
+                        </div>
+                        <div>
+                          <div>Html</div>
+                          <div>
+                            <p
+                              style="font-size: smaller; color: rgb(14, 13, 13)"
+                            >
+                              25 March
+                            </p>
+                          </div>
+                        </div>
                       </div>
+
+                      <div class="bar">
+                        <div class="fill"></div>
                       </div>
-                      
-                    
-                    <div class="bar">
-                      <div class="fill1"></div>
                     </div>
+
+                    <div class="ball-txt">
+                      <div class="ball1-text">
+                        <div>
+                          <img
+                            class="keep-img"
+                            src="./Images/Blue.png"
+                            alt=""
+                            width="15x"
+                            height="15px"
+                          />
+                        </div>
+                        <div>
+                          <div>Css</div>
+                          <div>
+                            <p
+                              style="font-size: smaller; color: rgb(14, 13, 13)"
+                            >
+                              12 March
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="bar">
+                        <div class="fill1"></div>
+                      </div>
                     </div>
                   </div>
 
-                  
                   <div class="right-footer">
-                    <div style="font-size: large; font-weight: 600; color: rgba(8, 8, 8, 0.815); margin-bottom: 17px;">Study time last week</div>
+                    <div
+                      style="
+                        font-size: large;
+                        font-weight: 600;
+                        color: rgba(8, 8, 8, 0.815);
+                        margin-bottom: 17px;
+                      "
+                    >
+                      Study time last week
+                    </div>
                     <div class="txt-chart">
                       <div class="chart1">
-                       <div><img class="keep-img" src="./Images/Blue.png" alt="" width="17px" height="17px"></div>
-                      <div>Angular</div>
+                        <div>
+                          <img
+                            class="keep-img"
+                            src="./Images/Blue.png"
+                            alt=""
+                            width="17px"
+                            height="17px"
+                          />
+                        </div>
+                        <div>Angular</div>
                       </div>
                       <div class="chart2">
-                        <div><img class="keep-img" src="./Images/red.png" alt="" width="17px" height="17px"></div>
-                      <div>React</div>
+                        <div>
+                          <img
+                            class="keep-img"
+                            src="./Images/red.png"
+                            alt=""
+                            width="17px"
+                            height="17px"
+                          />
+                        </div>
+                        <div>React</div>
                       </div>
                       <div class="chart3">
-                        <div><img class="keep-img" src="./Images/yellow.png" alt="" width="17px" height="17px"></div>
-                      <div>JavaScript</div>
+                        <div>
+                          <img
+                            class="keep-img"
+                            src="./Images/yellow.png"
+                            alt=""
+                            width="17px"
+                            height="17px"
+                          />
+                        </div>
+                        <div>JavaScript</div>
                       </div>
-                      
-                      
                     </div>
                     <div class="chart-body">
-                    <div class="day-chart" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                      <div class="chartt1" style="width: 4px; height: 4vh;"></div>
-                      <div class="chartt2" style="width: 4px; height: 4vh;"></div>
-                      <div class="chartt3" style="width: 4px; height: 4vh;"></div>
-                      <div>Mon</div>
-                    </div>
-                    <div class="day-chart1" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                      <div class="chartt1" style="width: 4px; height: 5vh;"></div>
-                      <div class="chartt2" style="width: 4px; height: 5vh;"></div>
-                      <div class="chartt3" style="width: 4px; height: 5vh;"></div>
-                      <div>Tue</div>
-                    </div>
-                     <div class="day-chart2" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                      <div class="chartt1" style="width: 4px; height: 6vh;"></div>
-                      <div class="chartt2" style="width: 4px; height: 6vh;"></div>
-                      <div class="chartt3" style="width: 4px; height: 6vh;"></div>
-                      <div>Wed</div>
-                    </div>
-                    <div class="day-chart3" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                      <div class="chartt1" style="width: 4px; height: 8vh;"></div>
-                      <div class="chartt2" style="width: 4px; height: 8vh;"></div>
-                      <div class="chartt3" style="width: 4px; height: 8vh;"></div>
-                      <div>Thur</div>
-                    </div>
-                    <div class="day-chart4" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                      <div class="chartt1" style="width: 4px; height: 6vh;"></div>
-                      <div class="chartt2" style="width: 4px; height: 6vh;"></div>
-                      <div class="chartt3" style="width: 4px; height: 6vh;"></div>
-                      <div>Fri</div>
-                      
-                    </div>
-                    <div class="day-chart5" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                      <div class="chartt1" style="width: 4px; height: 5vh;"></div>
-                      <div class="chartt2" style="width: 4px; height: 5vh;"></div>
-                      <div class="chartt3" style="width: 4px; height: 5vh;"></div>
-                      <div>Sat</div>
-                      
-                    </div>
-                    <div class="day-chart6" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                      <div class="chartt1" style="width: 4px; height: 4vh;"></div>
-                      <div class="chartt2" style="width: 4px; height: 4vh;"></div>
-                      <div class="chartt3" style="width: 4px; height: 4vh;"></div>
-                      <div>Sun</div>
-                      
-                    </div>
+                      <div
+                        class="day-chart"
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                          justify-content: center;
+                        "
+                      >
+                        <div
+                          class="chartt1"
+                          style="width: 4px; height: 4vh"
+                        ></div>
+                        <div
+                          class="chartt2"
+                          style="width: 4px; height: 4vh"
+                        ></div>
+                        <div
+                          class="chartt3"
+                          style="width: 4px; height: 4vh"
+                        ></div>
+                        <div>Mon</div>
+                      </div>
+                      <div
+                        class="day-chart1"
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                          justify-content: center;
+                        "
+                      >
+                        <div
+                          class="chartt1"
+                          style="width: 4px; height: 5vh"
+                        ></div>
+                        <div
+                          class="chartt2"
+                          style="width: 4px; height: 5vh"
+                        ></div>
+                        <div
+                          class="chartt3"
+                          style="width: 4px; height: 5vh"
+                        ></div>
+                        <div>Tue</div>
+                      </div>
+                      <div
+                        class="day-chart2"
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                          justify-content: center;
+                        "
+                      >
+                        <div
+                          class="chartt1"
+                          style="width: 4px; height: 6vh"
+                        ></div>
+                        <div
+                          class="chartt2"
+                          style="width: 4px; height: 6vh"
+                        ></div>
+                        <div
+                          class="chartt3"
+                          style="width: 4px; height: 6vh"
+                        ></div>
+                        <div>Wed</div>
+                      </div>
+                      <div
+                        class="day-chart3"
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                          justify-content: center;
+                        "
+                      >
+                        <div
+                          class="chartt1"
+                          style="width: 4px; height: 8vh"
+                        ></div>
+                        <div
+                          class="chartt2"
+                          style="width: 4px; height: 8vh"
+                        ></div>
+                        <div
+                          class="chartt3"
+                          style="width: 4px; height: 8vh"
+                        ></div>
+                        <div>Thur</div>
+                      </div>
+                      <div
+                        class="day-chart4"
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                          justify-content: center;
+                        "
+                      >
+                        <div
+                          class="chartt1"
+                          style="width: 4px; height: 6vh"
+                        ></div>
+                        <div
+                          class="chartt2"
+                          style="width: 4px; height: 6vh"
+                        ></div>
+                        <div
+                          class="chartt3"
+                          style="width: 4px; height: 6vh"
+                        ></div>
+                        <div>Fri</div>
+                      </div>
+                      <div
+                        class="day-chart5"
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                          justify-content: center;
+                        "
+                      >
+                        <div
+                          class="chartt1"
+                          style="width: 4px; height: 5vh"
+                        ></div>
+                        <div
+                          class="chartt2"
+                          style="width: 4px; height: 5vh"
+                        ></div>
+                        <div
+                          class="chartt3"
+                          style="width: 4px; height: 5vh"
+                        ></div>
+                        <div>Sat</div>
+                      </div>
+                      <div
+                        class="day-chart6"
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+                          justify-content: center;
+                        "
+                      >
+                        <div
+                          class="chartt1"
+                          style="width: 4px; height: 4vh"
+                        ></div>
+                        <div
+                          class="chartt2"
+                          style="width: 4px; height: 4vh"
+                        ></div>
+                        <div
+                          class="chartt3"
+                          style="width: 4px; height: 4vh"
+                        ></div>
+                        <div>Sun</div>
+                      </div>
                     </div>
                   </div>
-                 </div>
-                  
                 </div>
-                <div class="right-content">
-                  <div class="right-body">
-                    <div class="sub-right">
-                      <div><img class="keep-img" src="./Images/meeeee.png" alt="" width="100px" height="100px"></div>
-                      <div style="color: rgb(34, 32, 32);">Upgrade to <span style="font-weight: 900;">PRO</span> for <br> more resources</div>
-                      <button class="btn2">UPGRADE NOW</button>
-                    </div>
-                    <div class="txt-achieve">Achievements</div>
-                    <div class="achieve">
-                      <div><img class="keep-img" src="./Images/trophy.png" alt="" width="25px" height="25px"></div>
-                      <div><img class="keep-img" src="./Images/medal.png" alt="" width="25px" height="25px"></div>
-                      <div><img class="keep-img" src="./Images/high-quality.png" alt="" height="25px" width="25px"></div>
-                    </div>
-                    <div class="txt-remain">Remainder</div>
+              </div>
+              <div class="right-content">
+                <div class="right-body">
+                  <div class="sub-right">
                     <div>
-                      <div class="media-content" style="margin-top: 25px;">
-                        <div class="sub-media">
-                          <div><img class="keep-img" src="./Images/align-left.png" alt="" height="20px" width="20px"></div>
-                        <div>Data Structure Test <br><span style="font-size: small;">23 December 2019</span></div>
+                      <img
+                        class="keep-img"
+                        src="./Images/meeeee.png"
+                        alt=""
+                        width="100px"
+                        height="100px"
+                      />
+                    </div>
+                    <div style="color: rgb(34, 32, 32)">
+                      Upgrade to <span style="font-weight: 900">PRO</span> for
+                      <br />
+                      more resources
+                    </div>
+                    <button class="btn2">UPGRADE NOW</button>
+                  </div>
+                  <div class="txt-achieve">Achievements</div>
+                  <div class="achieve">
+                    <div>
+                      <img
+                        class="keep-img"
+                        src="./Images/trophy.png"
+                        alt=""
+                        width="25px"
+                        height="25px"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        class="keep-img"
+                        src="./Images/medal.png"
+                        alt=""
+                        width="25px"
+                        height="25px"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        class="keep-img"
+                        src="./Images/high-quality.png"
+                        alt=""
+                        height="25px"
+                        width="25px"
+                      />
+                    </div>
+                  </div>
+                  <div class="txt-remain">Remainder</div>
+                  <div>
+                    <div class="media-content" style="margin-top: 25px">
+                      <div class="sub-media">
+                        <div>
+                          <img
+                            class="keep-img"
+                            src="./Images/align-left.png"
+                            alt=""
+                            height="20px"
+                            width="20px"
+                          />
                         </div>
-                        
-                        <div><img class="keep-img" src="./Images/mediaa.png" alt="" height="30px" width="30px"></div>
-                      </div>
-                      <div class="media-last" style="margin-top: 20px;">
-                        <div class="last-content">
-                          <div><img class="keep-img" src="./Images/folder.jpg" alt="" width="20px" height="20px"></div>
-                         <div>Design Pattern Test <br><span style="font-size: small;">28 December 2019</span></div>
+                        <div>
+                          Data Structure Test <br /><span
+                            style="font-size: small"
+                            >23 December 2019</span
+                          >
                         </div>
-                      
-                      <div><img class="keep-img" src="./Images/mediaa.png" alt="" width="30px" height="30px"></div>
-                      
                       </div>
-                      
+
+                      <div>
+                        <img
+                          class="keep-img"
+                          src="./Images/mediaa.png"
+                          alt=""
+                          height="30px"
+                          width="30px"
+                        />
+                      </div>
+                    </div>
+                    <div class="media-last" style="margin-top: 20px">
+                      <div class="last-content">
+                        <div>
+                          <img
+                            class="keep-img"
+                            src="./Images/folder.jpg"
+                            alt=""
+                            width="20px"
+                            height="20px"
+                          />
+                        </div>
+                        <div>
+                          Design Pattern Test <br /><span
+                            style="font-size: small"
+                            >28 December 2019</span
+                          >
+                        </div>
+                      </div>
+
+                      <div>
+                        <img
+                          class="keep-img"
+                          src="./Images/mediaa.png"
+                          alt=""
+                          width="30px"
+                          height="30px"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="right-last keep-black">
-              
-                <div><img src="./Images/settingg.png" alt="" height="30px" width="30px"></div>
-                <div><img src="./Images/shopping-bag.png" alt="" height="30px" width="30px"></div>
-                <div><img src="./Images/invoicee.png" alt="" height="30px" width="30px"></div>
-              
-              
+          </div>
+          <div class="right-last keep-black">
+            <div>
+              <img
+                src="./Images/settingg.png"
+                alt=""
+                height="30px"
+                width="30px"
+              />
             </div>
-          </div>          
+            <div>
+              <img
+                src="./Images/shopping-bag.png"
+                alt=""
+                height="30px"
+                width="30px"
+              />
+            </div>
+            <div>
+              <img
+                src="./Images/invoicee.png"
+                alt=""
+                height="30px"
+                width="30px"
+              />
+            </div>
+          </div>
         </div>
-
-        
       </div>
-     <script src="script.js"></script>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
+
+
