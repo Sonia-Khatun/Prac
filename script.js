@@ -28,7 +28,7 @@ const closeSidebar = document.getElementById("closeSidebarBtn");
 
 closeSidebar.addEventListener("click", () => {
   sidebar.classList.remove("active");
-});
+}); 
 
 const sidebar = document.querySelector(".left-side");
 const hamburgerBtn = document.getElementById("hamburgerBtn");

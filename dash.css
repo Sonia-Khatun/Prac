@@ -4,7 +4,7 @@ body {
 }
 
 /* Dark Mode */
-body.dark {
+body.dark { 
   filter: invert(1) hue-rotate(180deg);
 }
 body.dark .keep-gray {
@@ -573,7 +573,7 @@ body .left-icon {
         margin-top: 153px;
     }
 .txt-remain {
-        margin-top: 57px;
+        margin-top: 57px;  
     }
 .sub-crud {
     gap: 20px;
@@ -593,10 +593,168 @@ body .left-icon {
 
 }
 
-@media (max-width: 430px) {
-  .header{
+/* FULL RESPONSIVENESS FOR iPhone 14 Pro Max (430px) */
+@media screen and (max-width: 430px) {
+
+  /* ---------- MAIN LAYOUT BECOMES ONE COLUMN ---------- */
+  .mid-section {
+    flex-direction: column;
+  }
+
+  .right-side {
+    flex-direction: column;
     width: 100%;
-    height: 10%;
+  }
+  .right-icon{
+    gap: 8px;
+  }
+  .left-icon{
+    gap: 9px;
+  }
+
+  .mid-content {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  /* ---------- LEFT CONTENT GOES FIRST (WELCOME BLOCK) ---------- */
+  .left-content {
+    width: 100%;
+    padding: 15px;
+    order: 1;
+  }
+
+  .subleft-content {
+    height: auto;
+    padding: 20px;
+  }
+
+  .text-img {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .big-small1 {
+    font-size: 1.5rem;
+  }
+
+  .big-small2 {
+    font-size: 0.9rem;
+    padding: 10px 0;
+  }
+
+  /* ---------- RESULTS SECTION NEXT ---------- */
+  .footer-content {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+
+  .left-footer,
+  .right-footer {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .bar {
+    width: 100px;
+    height: 6px;
+  }
+
+  /* ---------- STUDY CHART ---------- */
+  .chart-body {
+    padding-bottom: 20px;
+  }
+
+  /* ---------- RIGHT CONTENT (UPGRADE) LAST ---------- */
+  .right-content {
+    width: 100%;
+    padding: 10px;
+    order: 2;
+  }
+
+  .right-body {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .sub-right img {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* ---------- FONTS SMALLER ---------- */
+  body,
+  .txt,
+  .txt1,
+  .txt2,
+  select,
+  .custom-select,
+  .achieve div,
+  .txt-achieve,
+  .txt-remain {
+    font-size: 13px !important;
+  }
+
+  /* ---------- SIDEBAR THIN ---------- */
+  .left-side {
+    width: 150px !important;
+    left: -150px;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .left-side.active {
+    left: 0 !important;
+  }
+
+  .left-side img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .prof-name img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .sub-left,
+  .dash-img,
+  .crud,
+  .ecom,
+  .egret,
+  .invoice {
+    padding: 8px;
+    gap: 10px;
+  }
+
+  /* ---------- RIGHT-LAST BECOMES BOTTOM BAR ---------- */
+  .right-last {
+    width: 100% !important;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: rgb(1, 1, 41);
+
+    padding: 10px 0;
+    z-index: 9999;
+  }
+
+  .right-last img {
+    width: 26px;
+    height: 26px;
+  }
+
+  /* Remove extra space at bottom */
+  body {
+    padding-bottom: 60px;
   }
 }
-
