@@ -15,12 +15,9 @@ darkTheme.addEventListener("click", () => {
 })
 
 
-
-
-
-
 document.getElementById("hamburgerBtn").addEventListener("click", () => {
   document.querySelector(".left-side").classList.toggle("active");
+ 
 });
 
 const closeSidebar = document.getElementById("closeSidebarBtn");
@@ -39,10 +36,12 @@ const closeSidebarBtn = document.getElementById("closeSidebarBtn");
 hamburgerBtn.addEventListener("click", () => {
   sidebar.hidden = false;
   hamburgerBtn.style.display = "none";   // hide nav close icon
+  document.body.style.overflow = "hidden";
 });
 
 // CLOSE SIDEBAR (inside sidebar)
 closeSidebarBtn.addEventListener("click", () => {
   sidebar.hidden = true;
   hamburgerBtn.style.display = "block"; // show nav hamburger again
+  document.body.style.overflow = "scroll";
 });

@@ -1,3 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: gray;
+   
+}
 /* Normal — Light Mode */
 body {
   transition: filter 0.4s ease;
@@ -34,17 +46,7 @@ body.dark #sun{
 body.dark #moon {
   display: inline-block;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
-.container{
-    height: 100vh;
-    width: 100%;
-    background-color: gray;
-}
+
 
 .header{
     height: 10%;
@@ -140,7 +142,7 @@ input, select {
   color: white;
   width: 100%;
   padding: 12px;
-  margin: 8px 8px;
+  margin: 8px 0px;
   margin-right: 20px;
   display: inline-block;
   border: none;
@@ -162,6 +164,14 @@ input, select {
   font-size: 16px;
   color: rgb(190, 172, 172);
 }
+#dashboard-menu {
+   position: absolute;
+   left: 100%;     /* Open beside the sidebar */
+   top: 0;
+   background: rgba(1,1,41,0.9);
+   width: 180px;
+   z-index: 9999999;
+}
 #dashboard{
     padding-right: 20px;
 }
@@ -177,6 +187,7 @@ input, select {
 .sub-crud{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 36px;
 }
 .crudimg1{
@@ -191,11 +202,13 @@ input, select {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
+    justify-items: center;
     align-items: center;
 }
 .sub-ecom{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 36px;
 }
 .sub-ecom2{
@@ -209,6 +222,7 @@ input, select {
 }
 .sub-egret{
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 36px;
 }
@@ -471,6 +485,14 @@ input, select {
 #closeIcon{
     display: none;
 }
+#closeSidebarBtn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin: 20px;
+}
 
 
 @media (max-width: 1024px) {
@@ -500,7 +522,7 @@ input, select {
   }
 
 #closeSidebarBtn {
-  font-size: 28px;
+  font-size: 20px;
   background: none;
   border: none;
   cursor: pointer;
@@ -508,7 +530,9 @@ input, select {
   margin: 20px;
 }
 
-
+.custom-select {
+  padding-right: 0;
+}
 
 /* Sidebar Hidden (reset) */
 body .left-icon {
@@ -530,7 +554,7 @@ body .left-icon {
 }
 
 .dash-img{
-    margin-top: 200px;
+    margin-top: 60px;
     
 }
 .subleft-content{
@@ -593,10 +617,23 @@ body .left-icon {
 
 }
 
-/* FULL RESPONSIVENESS FOR iPhone 14 Pro Max (430px) */
+
 @media screen and (max-width: 430px) {
 
-  /* ---------- MAIN LAYOUT BECOMES ONE COLUMN ---------- */
+ .container{
+  height: auto;
+ 
+}
+.dash-img{
+    margin-top: 60px;
+    
+}
+#closeSidebarBtn{
+  font-size: 16px;
+}
+/* body{
+  overflow: hidden;
+} */
   .mid-section {
     flex-direction: column;
   }
@@ -618,10 +655,11 @@ body .left-icon {
     height: auto;
   }
 
-  /* ---------- LEFT CONTENT GOES FIRST (WELCOME BLOCK) ---------- */
+  
   .left-content {
     width: 100%;
-    padding: 15px;
+    padding: 0 15px;
+    /* padding-top: 0; */
     order: 1;
   }
 
@@ -644,11 +682,13 @@ body .left-icon {
     padding: 10px 0;
   }
 
-  /* ---------- RESULTS SECTION NEXT ---------- */
+
   .footer-content {
     flex-direction: column;
     height: auto;
     gap: 20px;
+    padding-top: 20px;
+
   }
 
   .left-footer,
@@ -663,12 +703,11 @@ body .left-icon {
     height: 6px;
   }
 
-  /* ---------- STUDY CHART ---------- */
   .chart-body {
     padding-bottom: 20px;
   }
 
-  /* ---------- RIGHT CONTENT (UPGRADE) LAST ---------- */
+  
   .right-content {
     width: 100%;
     padding: 10px;
@@ -685,7 +724,6 @@ body .left-icon {
     height: 80px;
   }
 
-  /* ---------- FONTS SMALLER ---------- */
   body,
   .txt,
   .txt1,
@@ -695,24 +733,35 @@ body .left-icon {
   .achieve div,
   .txt-achieve,
   .txt-remain {
-    font-size: 13px !important;
+    font-size: 13px;
+  }
+  .custom-select{
+    width: 100%;
+    margin-right: 10%;
+  }
+  .txt-remain{
+    margin-top: 25px;
   }
 
-  /* ---------- SIDEBAR THIN ---------- */
   .left-side {
-    width: 150px !important;
+    width: 170px ;
     left: -150px;
-    height: 100vh;
+    /* height: 100vh; */
     transition: 0.3s;
+  }
+  input, select{
+    margin: 8px 0px;
   }
 
   .left-side.active {
-    left: 0 !important;
+    top: 0;
+    left: 0;
+    overflow: hidden;
   }
 
   .left-side img {
-    width: 20px !important;
-    height: 20px !important;
+    width: 20px;
+    height: 20px;
   }
 
   .prof-name img {
@@ -720,19 +769,23 @@ body .left-icon {
     height: 60px;
   }
 
-  .sub-left,
-  .dash-img,
+  /* .sub-left,
   .crud,
+  .dash-img,
   .ecom,
   .egret,
   .invoice {
     padding: 8px;
     gap: 10px;
-  }
+  } */
 
-  /* ---------- RIGHT-LAST BECOMES BOTTOM BAR ---------- */
+  /* .dash-img{
+    margin-top: 30px;
+  } */
+  
+  
   .right-last {
-    width: 100% !important;
+    width: 100% ;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -743,18 +796,21 @@ body .left-icon {
     bottom: 0;
     left: 0;
     background: rgb(1, 1, 41);
-
-    padding: 10px 0;
     z-index: 9999;
+  }
+  .txt-achieve{
+    margin-top: 20px;
   }
 
   .right-last img {
     width: 26px;
     height: 26px;
   }
+  .btn2{
+    margin-bottom: 10px;
+  }
 
-  /* Remove extra space at bottom */
   body {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
 }
